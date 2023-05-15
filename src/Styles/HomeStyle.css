@@ -32,7 +32,7 @@
 }
 
 .home .headerContent button {
-    background-color: orange;
+    background-color: gray;
     margin-top: 20px;
     border: none;
     border-radius: 5px;
@@ -44,7 +44,7 @@
 }
 
 .headerContent button:hover {
-    background-color: gray;
+    background-color: rgb(72, 70, 70);
     cursor: pointer;
     transition: 0.3s ease-in;
 }
