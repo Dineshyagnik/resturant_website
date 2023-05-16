@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
-import { AppBar, Box, Divider, Drawer, IconButton, Toolbar, Typography } from '@mui/material';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
+import {
+  AppBar,
+  Box,
+  Divider,
+  Drawer,
+  IconButton,
+  Toolbar,
+  Typography
+} from '@mui/material';
+import Logo from '../../images/logo.svg'
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../../Styles/HeaderStyle.css';
 
 const Header = () => {
@@ -18,24 +26,23 @@ const Header = () => {
         color={'goldenrod'}
         variant='h6'
         component='div'
-        sx={{ flexGrow: 1,my:2 }}
+        sx={{ flexGrow: 1, my: 2 }}
       >
-        <FastfoodIcon />
-        My Resturant
+        <img src={Logo} alt='logo' height={'70'} width='200px' />
       </Typography>
-      <Divider/>
+      <Divider />
       <ul className='mobile-navigation'>
         <li>
-          <Link to={'/'}>Home</Link>
+          <NavLink activeClassName='active' to={'/'}>Home</NavLink>
         </li>
         <li>
-          <Link to={'/menu'}>Menu</Link>
+          <NavLink to={'/menu'}>Menu</NavLink>
         </li>
         <li>
-          <Link to={'/about'}>About</Link>
+          <NavLink to={'/about'}>About</NavLink>
         </li>
         <li>
-          <Link to={'/contact'}>Contact</Link>
+          <NavLink to={'/contact'}>Contact</NavLink>
         </li>
       </ul>
     </Box>
@@ -63,22 +70,21 @@ const Header = () => {
               component='div'
               sx={{ flexGrow: 1 }}
             >
-              <FastfoodIcon />
-              My Resturant
+              <img src={Logo} alt='logo' height={'70'} width='250px' />
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <ul className='navigation-menu'>
                 <li>
-                  <Link to={'/'}>Home</Link>
+                  <NavLink activeClassName="active" to={'/'}>Home</NavLink>
                 </li>
                 <li>
-                  <Link to={'/menu'}>Menu</Link>
+                  <NavLink to={'/menu'}>Menu</NavLink>
                 </li>
                 <li>
-                  <Link to={'/about'}>About</Link>
+                  <NavLink to={'/about'}>About</NavLink>
                 </li>
                 <li>
-                  <Link to={'/contact'}>Contact</Link>
+                  <NavLink to={'/contact'}>Contact</NavLink>
                 </li>
               </ul>
             </Box>
@@ -100,7 +106,7 @@ const Header = () => {
           </Drawer>
         </Box>
         <Box>
-        <Toolbar/>
+          <Toolbar />
         </Box>
       </Box>
     </>
