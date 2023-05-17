@@ -21,6 +21,9 @@ const Menu = () => {
                   <Typography variant='h5' gutterBottom component={'div'}>
                     {menu.name}
                   </Typography>
+                  <Typography variant='body' gutterBottom component={'div'}>
+                    {menu.price}
+                  </Typography>
                   <Typography variant='body2'>
                     {menu.Description}
                   </Typography>
