@@ -8,10 +8,10 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 const Footer = () => {
   return (
     <>
-      <Box sx={{ textAlign: 'center', bgcolor: '#1A1A19', color: 'white', p: 3 }}>
+      <Box sx={{ textAlign: 'center', bgcolor: '#1A1A19', color: 'white', p: 1}}>
         <Box sx={{
           my: 3, "& svg": {
-            fontSize: '60px',
+            fontSize: '30px',
             cursor: 'pointer',
             mr: 2
           },
@@ -27,7 +27,7 @@ const Footer = () => {
           <FacebookIcon />
           <YouTubeIcon />
         </Box>
-        <Typography variant='h5' sx={{
+        <Typography variant='h6' sx={{
           "@media (max-width:600px)": {
             fontSize: '1rem'
           }
